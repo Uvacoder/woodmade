@@ -1,4 +1,4 @@
-.menu-button {
+/* .menu-button {
   display: inline-block;
   cursor: pointer;
 }
@@ -26,3 +26,20 @@
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+
+.bar1-enter,
+.bar1-active {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.bar2-enter,
+.bar2-active {
+  opacity: 0;
+}
+
+.bar3-enter,
+.bar3-active {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+} */
