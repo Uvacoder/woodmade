@@ -1,14 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Landing from './LandingPage/landing_page';
+import Menu from './Menu/hamburger_menu';
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
         <div>
-          <Route path="/" component={Landing} />
+          <Menu />
+          <Switch>
+            <Route path="/" />
+          </Switch>
         </div>
       </BrowserRouter>
     </div>

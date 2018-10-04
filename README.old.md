@@ -1,2 +1,0 @@
-# heartmade
-heartmade woodworking project
