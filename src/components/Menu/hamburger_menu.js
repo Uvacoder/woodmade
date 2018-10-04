@@ -1,40 +1,60 @@
 import React, { Component } from 'react';
 
-import './hamburger_menu.css';
+import HamburgerMenu from 'react-hamburger-menu';
 
 class Menu extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      expanded: false,
-      change: ''
+      open: false
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = e => {
-    this.setState({ expanded: !this.state.expanded });
-  };
+  handleClick() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
 
   render() {
-    if (this.state.expanded === false) {
-      console.log('not expanded');
+    if (this.state.open === false) {
       return (
-        <div className="menu-button" onClick={this.handleClick}>
-          <div className="bar1" />
-          <div className="bar2" />
-          <div className="bar3" />
-        </div>
+        <HamburgerMenu
+          isOpen={this.state.open}
+          menuClicked={this.handleClick.bind(this)}
+          width={36}
+          height={30}
+          strokeWidth={1}
+          rotate={0}
+          color="black"
+          borderRadius={0}
+          animationDuration={0.5}
+        />
       );
     }
-    console.log('EXPANDED');
     return (
-      <div className="menu-button" onClick={this.handleClick}>
-        <div className="change bar1" />
-        <div className="change bar2" />
-        <div className="change bar3" />
-      </div>
+      <nav>
+        <HamburgerMenu
+          isOpen={this.state.open}
+          menuClicked={this.handleClick.bind(this)}
+          width={36}
+          height={30}
+          strokeWidth={1}
+          rotate={0}
+          color="black"
+          borderRadius={0}
+          animationDuration={0.5}
+        />
+        <div className="menu-container">
+          <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+          </ul>
+        </div>
+      </nav>
     );
   }
 }
