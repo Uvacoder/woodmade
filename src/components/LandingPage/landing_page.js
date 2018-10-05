@@ -4,7 +4,7 @@ import './landing_page.css';
 
 class Landing extends Component {
   render() {
-    return <div>about?about?</div>;
+    return <div>woody</div>;
   }
 }
 
