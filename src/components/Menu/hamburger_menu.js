@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import HamburgerMenu from 'react-hamburger-menu';
 
 import './hamburger_menu.css';
@@ -93,6 +92,7 @@ class Menu extends Component {
                 className="menu-list-item route-link"
                 style={{ textDecoration: 'none' }}
                 href="https://www.etsy.com/shop/heartmadewoodworking"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 Purchase

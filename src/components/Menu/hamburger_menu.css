@@ -6,6 +6,11 @@
   cursor: pointer;
 }
 
+/* .menu-list {
+  position: fixed;
+  top: 40px;
+} */
+
 li {
   margin: 0;
 }

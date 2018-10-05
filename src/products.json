@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "blue",
+    "image": "./images/product_images/bluestripe.jpg"
+  },
+  {
+    "id": 2,
+    "name": "checker",
+    "image": "./images/product_images/checkerboard.jpg"
+  },
+  {
+    "id": 3,
+    "name": "coffee",
+    "image": "./images/product_images/coffeetable.jpg"
+  },
+  {
+    "id": 4,
+    "name": "guitar",
+    "image": "./images/product_images/guitar.jpg"
+  },
+  {
+    "id": 5,
+    "name": "long",
+    "image": "./images/product_images/longsidetable.jpg"
+  },
+  {
+    "id": 6,
+    "name": "pencil",
+    "image": "./images/product_images/pencilbox.jpg"
+  },
+  {
+    "id": 7,
+    "name": "quilty",
+    "image": "./images/product_images/quiltybox.jpg"
+  },
+  {
+    "id": 8,
+    "name": "record",
+    "image": "./images/product_images/recordholder.jpg"
+  },
+  {
+    "id": 9,
+    "name": "rose",
+    "image": "./images/product_images/rose.jpg"
+  },
+  {
+    "id": 10,
+    "name": "side",
+    "image": "./images/product_images/sidetable.jpg"
+  }
+]

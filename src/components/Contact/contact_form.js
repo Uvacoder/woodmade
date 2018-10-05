@@ -25,6 +25,7 @@ class Contact extends Component {
               className="contact-link"
               href="mailto:troykacz@gmail.com"
               src={Gmail}
+              alt="email heartmade"
             />
           </a>
           <img
