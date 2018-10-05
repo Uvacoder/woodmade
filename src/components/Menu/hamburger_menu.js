@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import HamburgerMenu from 'react-hamburger-menu';
 
 import './hamburger_menu.css';
@@ -24,32 +24,37 @@ class Menu extends Component {
   render() {
     if (this.state.open === false) {
       return (
-        <HamburgerMenu
-          isOpen={this.state.open}
-          menuClicked={this.handleClick.bind(this)}
-          width={36}
-          height={30}
-          strokeWidth={3}
-          rotate={0}
-          color="black"
-          borderRadius={0}
-          animationDuration={0.5}
-        />
+        <div className="burger">
+          <HamburgerMenu
+            isOpen={this.state.open}
+            menuClicked={this.handleClick.bind(this)}
+            width={36}
+            height={30}
+            strokeWidth={3}
+            rotate={0}
+            color="black"
+            borderRadius={0}
+            animationDuration={0.5}
+          />
+        </div>
       );
     }
     return (
       <nav>
-        <HamburgerMenu
-          isOpen={this.state.open}
-          menuClicked={this.handleClick.bind(this)}
-          width={36}
-          height={30}
-          strokeWidth={3}
-          rotate={0}
-          color="black"
-          borderRadius={0}
-          animationDuration={0.5}
-        />
+        <div className="burger">
+          <HamburgerMenu
+            isOpen={this.state.open}
+            menuClicked={this.handleClick.bind(this)}
+            width={36}
+            height={30}
+            strokeWidth={3}
+            rotate={0}
+            color="black"
+            borderRadius={0}
+            animationDuration={0.5}
+          />
+        </div>
+
         <div className="menu-container">
           <ul className="menu-list" style={{ listStyle: 'none' }}>
             <li className="menu-list-item">
