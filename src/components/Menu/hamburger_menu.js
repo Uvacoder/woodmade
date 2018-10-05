@@ -67,7 +67,7 @@ class Menu extends Component {
                 Home
               </Link>
             </li>
-            <li className="menu-list-item">
+            {/* <li className="menu-list-item">
               <Link
                 onClick={this.handleClick}
                 className="menu-list-item route-link"
@@ -76,7 +76,7 @@ class Menu extends Component {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
             <li className="menu-list-item">
               <Link
                 onClick={this.handleClick}
