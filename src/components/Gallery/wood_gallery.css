@@ -1,0 +1,19 @@
+.buffer {
+  height: 40px;
+  margin-bottom: 5%;
+}
+.products {
+  display: flex;
+  flex-shrink: 1;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.product {
+  margin: 1%;
+}
+
+.product-image {
+  border-radius: 2%;
+  box-shadow: 0 5px 40px #999, 0 3px 10px #999;
+}
