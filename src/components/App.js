@@ -12,8 +12,9 @@ const App = () => {
       <BrowserRouter>
         <div>
           <Menu />
+          <Contact />
           <Switch>
-            <Route path="/contact" component={Contact} />
+            {/* <Route path="/contact" component={Contact} /> */}
             <Route path="/gallery" component={Gallery} />
             <Route path="/" component={Landing} />
           </Switch>
