@@ -87,6 +87,17 @@ class Menu extends Component {
                 Gallery
               </Link>
             </li>
+            <li className="menu-list-item">
+              <a
+                onClick={this.handleClick}
+                className="menu-list-item route-link"
+                style={{ textDecoration: 'none' }}
+                href="https://www.etsy.com/shop/heartmadewoodworking"
+                target="_blank"
+              >
+                Purchase
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
