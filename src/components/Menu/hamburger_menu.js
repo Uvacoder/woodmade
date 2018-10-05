@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import HamburgerMenu from 'react-hamburger-menu';
+
+import './hamburger_menu.css';
 
 class Menu extends Component {
   constructor(props) {
@@ -26,7 +29,7 @@ class Menu extends Component {
           menuClicked={this.handleClick.bind(this)}
           width={36}
           height={30}
-          strokeWidth={1}
+          strokeWidth={3}
           rotate={0}
           color="black"
           borderRadius={0}
@@ -41,17 +44,44 @@ class Menu extends Component {
           menuClicked={this.handleClick.bind(this)}
           width={36}
           height={30}
-          strokeWidth={1}
+          strokeWidth={3}
           rotate={0}
           color="black"
           borderRadius={0}
           animationDuration={0.5}
         />
         <div className="menu-container">
-          <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>Gallery</li>
+          <ul className="menu-list" style={{ listStyle: 'none' }}>
+            <li className="menu-list-item">
+              <Link
+                onClick={this.handleClick}
+                className="menu-list-item route-link"
+                style={{ textDecoration: 'none' }}
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="menu-list-item">
+              <Link
+                onClick={this.handleClick}
+                className="menu-list-item route-link"
+                style={{ textDecoration: 'none' }}
+                to="/contact"
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="menu-list-item">
+              <Link
+                onClick={this.handleClick}
+                className="menu-list-item route-link"
+                style={{ textDecoration: 'none' }}
+                to="/gallery"
+              >
+                Gallery
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -4,7 +4,7 @@ import './landing_page.css';
 
 class Landing extends Component {
   render() {
-    return <div>HEARTMADE</div>;
+    return <div>about?about?</div>;
   }
 }
 
